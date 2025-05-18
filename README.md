@@ -74,18 +74,21 @@ Backend: Render, Railway
 Database: MongoDB Atlas
 
 ## 🔌 API Endpoints
-Method	Endpoint	Description
-POST	/api/auth/register	Register new user
-POST	/api/auth/login	Login user
-GET	/api/wallet/accounts	Get user wallet info
-GET	/api/wallet/transactions	Get user transactions
-POST	/api/wallet/credit	Credit wallet
-POST	/api/wallet/debit	Debit wallet
-POST	/api/wallet/transfer	Transfer funds
-POST	/api/wallet/request	Request payment
-GET	/api/auth/profile	Get user profile
-PUT	/api/auth/profile	Update user profile
-GET	/api/accounts/admin/users	Get all users (admin only)
+
+| Method | Endpoint                       | Description                    |
+|--------|--------------------------------|--------------------------------|
+| POST   | `/api/auth/register`          | Register new user              |
+| POST   | `/api/auth/login`             | Login user                     |
+| GET    | `/api/wallet/accounts`        | Get user wallet info           |
+| GET    | `/api/wallet/transactions`    | Get user transactions          |
+| POST   | `/api/wallet/credit`          | Credit wallet                  |
+| POST   | `/api/wallet/debit`           | Debit wallet                   |
+| POST   | `/api/wallet/transfer`        | Transfer funds                 |
+| POST   | `/api/wallet/request`         | Request payment                |
+| GET    | `/api/auth/profile`           | Get user profile               |
+| PUT    | `/api/auth/profile`           | Update user profile            |
+| GET    | `/api/accounts/admin/users`   | Get all users (admin only)     |
+
 
 ## 🔐 Security Best Practices
 ✅ Never push .env files or API keys to GitHub.
